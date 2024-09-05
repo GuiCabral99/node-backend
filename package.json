@@ -1,0 +1,23 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "nodejs, mongodb and prisma",
+  "main": "index.js",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev": "yarn prisma generate && yarn tsx watch src/server.ts"
+  },
+  "devDependencies": {
+    "@prisma/client": "^5.18.0",
+    "@types/node": "^22.3.0",
+    "prisma": "^5.18.0",
+    "tsx": "^4.17.0",
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "fastify": "^4.28.1",
+    "mongodb": "^6.8.0"
+  }
+}
